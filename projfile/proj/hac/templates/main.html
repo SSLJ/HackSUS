@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Haven - Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            max-width: 55px;
+            max-height: 55px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f2f2f2;
+            align-items: center;
+        }
+
+        .center-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .get-started-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .content-container {
+            display: flex; /* Use flexbox for layout */ 
+
+        }
+
+        .tree-container {
+            flex: 0 0 auto; /* Make the container non-flexible */
+            text-align: left; /* Adjusted margin for better appearance */
+            margin-top: 150px;
+            margin-left: 180px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .tree {
+            max-width: 100%;
+            margin-top: 20px; /* Adjusted margin for better appearance */
+        }
+
+        .about-us {
+            flex: 1; 
+            padding: 20px; 
+            margin-right: 20px; 
+            margin-left: 400px;
+            margin-bottom: 300px;
+            margin-top: 150px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            max-width: 600px; 
+        }
+
+        .contact-details {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+           <!-- <img src="logoo.jpg" alt="Company Logo" class="logo">-->
+            <img src="{% static 'logoo.jpg' %}" alt="logo" class="logo" >
+            <h1>Nature Haven</h1>
+        </div>
+    </header>
+
+    <nav>
+    </nav>
+
+    <div class="content-container">
+        <div class="tree-container">
+            <!--<img class="tree" src="trree.png">-->
+            <img src="{% static 'trree.png' %}" alt="logo" class="tree" >
+        </div>
+
+        <div class="about-us">
+            <h2>About Us</h2>
+            <p>An app that tells users whether a plant is suitable for growth in their area</p>
+            <p>Our mission is to empower farmers with the tools and knowledge needed to enhance crop yield, optimize resource usage, and promote environmental stewardship. Whether you are a seasoned farmer or just starting, Nature Haven is here to support your journey towards a prosperous and sustainable future in agriculture.</p>
+        </div>
+    </div>
+
+    <div class="center-section">
+        <p class="quote">"Farming is not just a job; it's a way of life."</p>
+        <a href="login.html" class="get-started-button">Get Started</a>
+    </div>
+
+    <div class="contact-details">
+        <h2>Contact Us</h2>
+        <p>Phone: +91 91887 05120</p>
+    </div>
+</body>
+</html>
